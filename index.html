@@ -391,7 +391,7 @@
             const prompt = `Bạn là một chuyên gia văn hóa Việt Nam. Hãy viết một lời chúc Tết Dương Lịch 2026 và Xuân Bính Ngọ thật hay, ngắn gọn (dưới 60 từ) và phù hợp cho người nhận là "${relation}" tên là "${name}". Phong cách lời chúc: "${style}". Hãy dùng hình ảnh ẩn dụ về năm mới, hoặc con Ngựa (mã đáo thành công) nếu hợp lý. Chỉ trả về nội dung lời chúc, không thêm dẫn dắt.`;
 
             try {
-                const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${AIzaSyBGWgoU6r5MmktrvYdtwTkSGK7jZNOcPBk}`, {
+                const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBGWgoU6r5MmktrvYdtwTkSGK7jZNOcPBk {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({
